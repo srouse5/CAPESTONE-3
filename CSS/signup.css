@@ -1,0 +1,97 @@
+
+
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #ffe5f1, #ffdff0);
+            color: #4A4A4A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px 40px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .signup-container h1 {
+            font-size: 2em;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        .signup-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 0.9em;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 0.9em;
+            border: 1px solid #ffd2e3;
+            border-radius: 25px;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #ff69b4;
+            box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.3);
+        }
+
+        .btn {
+            background: #ff69b4;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ff47a3;
+        }
+
+        .alt-links {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .alt-links a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+
+        .alt-links a:hover {
+            text-decoration: underline;
+        }
+
+

@@ -1,0 +1,92 @@
+
+</head>
+<body>
+    <div class="profile-container">
+        <h1>My Profile</h1>
+
+        <!-- Profile Picture Section -->
+        <div class="profile-picture">
+            <img src="IMG/btterfly.jpg" alt="Profile Picture">
+            <input type="file" id="profilePic" accept="image/*">
+        </div>
+
+        <!-- Bio Section -->
+        <div class="bio-section">
+            <h2>Biography</h2>
+            <textarea id="bio" rows="5" placeholder="Write something about yourself..."></textarea>
+            <button class="update-btn" onclick="updateBio()">Update Bio</button>
+        </div>
+
+        <!-- Profile Information Section -->
+        <div class="info-section">
+            <h2>Profile Information</h2>
+            <p><strong>Username:</strong> Syd</p>
+            <p><strong>Email:</strong> 8@gmail.com</p>
+            <p><strong>Joined:</strong> December 1, 2024</p>
+        </div>
+        <a href="logout.html" class="cta">Log Out</a>
+    </div>
+
+    <script>
+        function updateBio() {
+            const bioText = document.getElementById("bio").value;
+            if (bioText.trim() !== "") {
+                alert("Bio updated successfully!"); // Placeholder action
+                // Code to save bio to the server or local storage can go here.
+            } else {
+                alert("Please write something in your bio.");
+            }
+        }
+
+        function logout() {
+            alert("You have been logged out.");
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./CSS/profile.css">
+
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+</body>
+</html>
+<body>
+   
+    <div class="container">
+        <h2>Welcome!</h2>
+        <form>
+            <label for="new-message">Create a new post:</label>
+            <textarea id="new-message" placeholder="Write your message here..."></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div class="links">
+            <a href="messages.html">Back to Messages</a> | 
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
+<body>
+    <nav>
+        <div class="logo">Butterfly</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <a href="logout.html" class="cta">Log Out</a>
+    </nav>
+</body>
+</html>
+
